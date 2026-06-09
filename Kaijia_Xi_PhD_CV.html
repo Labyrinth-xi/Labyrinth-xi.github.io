@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kaijia Xi - PhD Academic CV</title>
+    <style>
+      :root {
+        --ink: #172522;
+        --text: #32413e;
+        --muted: #687873;
+        --line: #d8e0dd;
+        --teal: #157b75;
+        --paper: #ffffff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: #eef3f1;
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11.5pt;
+        line-height: 1.45;
+      }
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 28px auto;
+        padding: 42px 52px;
+        background: var(--paper);
+        box-shadow: 0 16px 44px rgba(23, 37, 34, 0.12);
+      }
+      header {
+        border-bottom: 2px solid var(--teal);
+        padding-bottom: 16px;
+        margin-bottom: 22px;
+      }
+      h1, h2, h3 {
+        color: var(--ink);
+        margin: 0;
+        line-height: 1.2;
+      }
+      h1 {
+        font-size: 30pt;
+        letter-spacing: 0;
+      }
+      h2 {
+        margin-top: 22px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid var(--line);
+        color: var(--teal);
+        font-size: 14pt;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      h3 {
+        margin-top: 13px;
+        font-size: 12.4pt;
+      }
+      p { margin: 7px 0; }
+      ul {
+        margin: 7px 0 0 19px;
+        padding: 0;
+      }
+      li {
+        margin: 4px 0;
+      }
+      a {
+        color: var(--teal);
+        text-decoration: none;
+      }
+      .contact {
+        margin-top: 8px;
+        color: var(--muted);
+      }
+      .role {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        margin-top: 14px;
+      }
+      .role strong {
+        color: var(--ink);
+      }
+      .date {
+        flex: 0 0 auto;
+        color: var(--muted);
+        font-size: 10.8pt;
+        white-space: nowrap;
+      }
+      .subtle {
+        color: var(--muted);
+      }
+      .compact-list li {
+        margin: 3px 0;
+      }
+      @page {
+        size: A4;
+        margin: 14mm 13mm;
+      }
+      @media print {
+        body {
+          background: #fff;
+          font-size: 10.5pt;
+        }
+        main {
+          width: auto;
+          margin: 0;
+          padding: 0;
+          box-shadow: none;
+        }
+        h1 { font-size: 26pt; }
+        h2 {
+          margin-top: 16px;
+          break-after: avoid;
+        }
+        h3, .role {
+          break-after: avoid;
+        }
+        a { color: inherit; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Kaijia Xi</h1>
+        <p class="contact">
+          Email: <a href="mailto:KAIJIA001@e.ntu.edu.sg">KAIJIA001@e.ntu.edu.sg</a> |
+          Website: <a href="https://labyrinth-xi.github.io">https://labyrinth-xi.github.io</a>
+        </p>
+        <p><strong>Research Interests:</strong> Electrochemical materials, electrocatalysis, high throughput experimentation, Bayesian optimization, data guided materials discovery</p>
+      </header>
+
+      <section>
+        <h2>Education</h2>
+        <div class="role">
+          <p><strong>Nanyang Technological University</strong>, Singapore<br>M.Sc. in Materials Science and Engineering<br><span class="subtle">Relevant coursework: Electrochemistry; Failure Analysis; Application of IP in Research and Development</span></p>
+          <p class="date">Aug 2025 to Jun 2026</p>
+        </div>
+        <div class="role">
+          <p><strong>Zhengzhou University</strong>, Zhengzhou, China<br>B.Eng. in Materials Science and Engineering</p>
+          <p class="date">Sep 2020 to Jul 2024</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Research Profile</h2>
+        <p>My research interest is in electrochemical materials and how data can make experimental decisions more reliable. In my current work, I study carbon based multi metal catalysts for electrocatalytic reactions, with a focus on methanol oxidation and formate production. I connect catalyst composition, electrochemical response, product quantification, and model feedback so that each batch of experiments can guide the next one.</p>
+      </section>
+
+      <section>
+        <h2>Research Experience</h2>
+        <div class="role">
+          <p><strong>Bayesian Optimization and High Throughput Screening of Carbon Based Electrocatalysts</strong><br>Nanyang Technological University</p>
+          <p class="date">Aug 2025 to Present</p>
+        </div>
+        <ul>
+          <li>Prepare carbon supported multi metal catalysts and evaluate their electrochemical performance in clean energy related reactions.</li>
+          <li>Build experimental datasets that record catalyst composition, loading, preparation conditions, electrochemical activity, product yield, and selectivity.</li>
+          <li>Use Python controlled pulse heating to tune nanoparticle loading and dispersion on carbon cloth, which supports faster sample preparation and batch comparison.</li>
+          <li>Carry out electrochemical measurements in a three electrode cell with an ion exchange membrane. The main tests include cyclic voltammetry and chronoamperometry.</li>
+          <li>Quantify formate produced from methanol oxidation electrolytes using NMR and ion chromatography.</li>
+          <li>Combine CA charge, average current, formate concentration, yield, and Faradaic efficiency to compare catalyst performance.</li>
+          <li>Write Python scripts for electrochemical data processing, NMR and IC calibration, concentration calculation, and FE summary generation.</li>
+          <li>Analyze Bayesian optimization results together with experimental observations. I check model error, batch effects, candidate ranking, and local refinement before planning the next compositions.</li>
+        </ul>
+
+        <div class="role">
+          <p><strong>Composition Design and Electrochemical Performance of Carbon Nanofiber Based Composite Electrodes</strong><br>Undergraduate Thesis, Zhengzhou University</p>
+          <p class="date">Nov 2023 to Jun 2024</p>
+        </div>
+        <ul>
+          <li>Designed and prepared carbon nanofiber based composite electrodes with active components such as NiCo2S4 and MoS2.</li>
+          <li>Used hydrothermal growth and doping modification to improve electrochemical energy storage behavior.</li>
+          <li>Improved charge transfer and electrode reaction kinetics through Ni doping. The best sample reached a specific capacitance of 995 F g-1.</li>
+          <li>Used CV, GCD, and EIS to study charge transfer resistance, ion diffusion behavior, and the influence of composition design on electrochemical performance.</li>
+          <li>Thesis grade: 90/100.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Industry Experience</h2>
+        <div class="role">
+          <p><strong>R&D Intern, Lithium Difluorophosphate Electrolyte Additive Development</strong><br>Do-Fluoride New Materials Co., Ltd.</p>
+          <p class="date">Feb 2025 to May 2025</p>
+        </div>
+        <ul>
+          <li>Participated in process development for lithium difluorophosphate, an electrolyte additive used in lithium ion batteries.</li>
+          <li>Worked on raw material ratio adjustment, reaction conditions, solvent recovery, purification, crystallization, and impurity control.</li>
+          <li>Designed and carried out small scale experiments to investigate scale up issues, including low yield, high impurity content, material stability, and process fluctuation.</li>
+          <li>Studied production problems such as the influence of distillation feed ratio on solvent purity and the effect of crystallization feed ratio on product acidity.</li>
+          <li>Supported process improvement work that reduced product agglomeration and increased yield by about 7%.</li>
+          <li>Helped develop XRD and NMR based methods for impurity analysis, which supported internal quality control standards.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Technical Skills</h2>
+        <ul class="compact-list">
+          <li><strong>Electrochemistry:</strong> CV, CA, EIS, GCD, three electrode testing, CA charge integration, Faradaic efficiency calculation.</li>
+          <li><strong>Materials synthesis and processing:</strong> Electrocatalyst preparation, carbon cloth supported catalyst synthesis, pulse heating assisted sample preparation, electrolyte additive synthesis, process optimization, purification, impurity control.</li>
+          <li><strong>Characterization and quantification:</strong> XRD, SEM, NMR, IC, FTIR, formate calibration and quantification.</li>
+          <li><strong>Data and software:</strong> Python, Origin, Jade, ZView, Digital Micrograph, Excel.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Fit for PhD Research</h2>
+        <ul>
+          <li>Trained in synthesis, electrochemical testing, product analysis, and structure performance discussion.</li>
+          <li>Comfortable turning raw experimental files into organized datasets for comparison across batches.</li>
+          <li>Able to connect practical process thinking from industry with academic questions in electrocatalysis.</li>
+          <li>Interested in closed loop materials discovery, catalyst optimization, and interpretable data guided experiment design.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
